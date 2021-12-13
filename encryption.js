@@ -4,7 +4,7 @@ module.exports = {
     return CryptoJS.AES.encrypt(message, key).toString();
   },
   decrypt: function (message, key) {
-    var bytes = CryptoJS.AES.decrypt(message, key);
+    const bytes = CryptoJS.AES.decrypt(message, key);
     return bytes.toString(CryptoJS.enc.Utf8);
   },
 }
