@@ -20,8 +20,6 @@ app.get('/api/connect/:num', (req, res) => {
 });
 
 module.exports = {
-  start: function() {
-    app.listen(3000)
-  }
+  start: app.listen(3000)
 }
 
