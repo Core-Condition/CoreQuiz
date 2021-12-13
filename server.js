@@ -14,7 +14,7 @@ app.get('/api/connect', (req, res) => {
 app.get('/api/connect/:num', (req, res) => {
   const num = req.params.num
    const key = encryption.encrypt(JSON.stringify({hi: "hi"}), num)
-  res.json({ connectionKey: key, id: num})
+  res.json({ connectionKey: key, id: num, test: JSON.parse(encryption.decrypt(key, num))})
   
   
 });
