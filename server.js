@@ -8,7 +8,9 @@ app.get('/', (req, res) => {
   res.type('html')
   res.send('hi <a href="api/connect">hi<a>')
 });
-
+app.get('/api/connect', (req, res) => {
+  res.status(404)
+}
 
 app.get('/api/connect/:num', (req, res) => {
   var num = req.params.num
