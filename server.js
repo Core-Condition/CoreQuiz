@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 app.get('/api/connect', (req, res) => {
   res.status(404)
-}
+});
 
 app.get('/api/connect/:num', (req, res) => {
   const num = req.params.num
@@ -20,5 +20,9 @@ app.get('/api/connect/:num', (req, res) => {
   
 });
 
-app.listen(3000);
+module.exports = {
+  start: function() {
+    app.listen(3000)
+  }
+}
 
