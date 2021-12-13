@@ -1,4 +1,4 @@
-var CryptoJS = require("crypto-js");
+const CryptoJS = require("crypto-js");
 module.exports = {
   encrypt: function (message, key) {
     return CryptoJS.AES.encrypt(message, key).toString();
