@@ -1,6 +1,5 @@
 const express = require('express');
 const encryption = require('./encryption')
-const codegen = require('./codegen')
 const app = express();
 
 
