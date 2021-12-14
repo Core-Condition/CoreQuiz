@@ -1,4 +1,2 @@
-# CoreQuiz
+# CoreGame
 
-hi this cool
-sus

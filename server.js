@@ -1,7 +1,7 @@
 const express = require('express');
 const encryption = require('./encryption')
 const app = express();
-const db = require("quick.db")
+// const db = require("quick.db")
 
 app.get('/', (req, res) => {
   res.type('html')
